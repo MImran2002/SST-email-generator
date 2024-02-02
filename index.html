@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SST Email Generator</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+        <div class="main_header">
+            <div id="header_1" class="header"></div>
+            <div id="header_2" class="header"></div>
+            <div id="header_main" class="header">
+                <h1>Student Success & Transition</h1>
+                <button>Customize</button>
+                <button>Home</button>
+            </div>
+        </div>
+    <div class="container">
+        <div class="checklist">
+            <input type="text" id="Student_Name" name="Student_Name" name="studentName" placeholder="Student's Name"><br>
+            <input type="text" id="Professor_Name" name="Professor_Name" name="professorName" placeholder="Professor's Name"><br>
+            <input type="checkbox" id="Initiator_Alert_Response" name="Initiator_Alert_Response" value="initiatorAlert">
+            <label for="Initiator_Alert_Response">Initiator Alert Response</label><br>
+            <input type="checkbox" id="Request_Feedback" name="Request_Feedback" value="requestFeedback">
+            <label for="Request_Feedback">Request Feedback</label><br>
+            <input type="checkbox" id="Responding_To_Feedback" name="Responding_To_Feedback" value="respondingFeedback">
+            <label for="Responding_To_Feedback">Responding to Feedback</label><br>
+            <hr>
+            <input type="checkbox" id="Prof_Response_Mand" name="Prof_Response_Mand" value="profResponseMand">
+            <label for="Prof_Response_Mand">Update-on-Case: Mandatory</label><br>
+            <input type="checkbox" id="Prof_Response_Nonmand" name="Prof_Response_Nonmand" value="profResponseNonmand">
+            <label for="Prof_Response_Nomand">Update-on-Case: Non-Mandatory</label><br>
+            <input type="checkbox" id="Prof_Response_Init" name="Prof_Response_Init" value="profResponseInit">
+            <label for="Prof_Response_Init">Update-on-Case: Initiator reach out</label><br>
+        </div>
+        <div class="email_display">
+            <span></span>
+        </div>
+    </div>
+</body>
+</html>

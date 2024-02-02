@@ -1,0 +1,39 @@
+body{
+    color: #f8f8f8;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    display:grid;
+    grid-template-columns: 200px auto;
+}
+.main_header{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#header_1{
+    grid-row-start: 0;
+    grid-row-end: 1;
+    background-color: #003f61;
+}
+#header_2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #00517d;
+}
+#header_main{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #005a8b;
+}
+.checklist{
+    grid-column-start:0;
+    grid-column-end:1;
+    grid-row-start:0;
+    grid-row-end:2;
+}
+.email_display{
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+}
