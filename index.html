@@ -5,38 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SST Email Generator</title>
     <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Oswald:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
         <div class="main_header">
             <div id="header_1" class="header"></div>
-            <div id="header_2" class="header"></div>
             <div id="header_main" class="header">
-                <h1>Student Success & Transition</h1>
-                <button>Customize</button>
-                <button>Home</button>
+                <h1 class="h_info">Student Success & Transition</h1>
+                <button class="h_info" id="button_1">Customize</button>
+                <button class="h_info" id="button_2">Home</button>
             </div>
-        </div>
+            <div id="header_2" class="header"></div>
+            </div>
     <div class="container">
+        <div>
         <div class="checklist">
-            <input type="text" id="Student_Name" name="Student_Name" name="studentName" placeholder="Student's Name"><br>
-            <input type="text" id="Professor_Name" name="Professor_Name" name="professorName" placeholder="Professor's Name"><br>
-            <input type="checkbox" id="Initiator_Alert_Response" name="Initiator_Alert_Response" value="initiatorAlert">
-            <label for="Initiator_Alert_Response">Initiator Alert Response</label><br>
-            <input type="checkbox" id="Request_Feedback" name="Request_Feedback" value="requestFeedback">
-            <label for="Request_Feedback">Request Feedback</label><br>
-            <input type="checkbox" id="Responding_To_Feedback" name="Responding_To_Feedback" value="respondingFeedback">
-            <label for="Responding_To_Feedback">Responding to Feedback</label><br>
-            <hr>
-            <input type="checkbox" id="Prof_Response_Mand" name="Prof_Response_Mand" value="profResponseMand">
-            <label for="Prof_Response_Mand">Update-on-Case: Mandatory</label><br>
-            <input type="checkbox" id="Prof_Response_Nonmand" name="Prof_Response_Nonmand" value="profResponseNonmand">
-            <label for="Prof_Response_Nomand">Update-on-Case: Non-Mandatory</label><br>
-            <input type="checkbox" id="Prof_Response_Init" name="Prof_Response_Init" value="profResponseInit">
-            <label for="Prof_Response_Init">Update-on-Case: Initiator reach out</label><br>
+            <br>
+            <textarea type="text" id="Student_Name" name="Student_Name" name="studentName" placeholder="Student's Name" class="input"></textarea><br>
+            <textarea type="text" id="Professor_Name" name="Professor_Name" name="professorName" placeholder="Professor's Name" class="input"></textarea><br>
+            <div>
+                <input class="checkbox" type="checkbox" id="checkbox0" name="Initiator_Alert_Response" value="initiatorAlert">
+                <label class="checkbox" for="Initiator_Alert_Response">Initiator Alert Response</label>
+            </div><br>
+            <div>
+                <input class="checkbox" type="checkbox" id="checkbox1" name="Request_Feedback" value="requestFeedback">
+                <label class="checkbox" for="Request_Feedback">Request Feedback</label>
+            </div><br>
+            <div>
+                <input class="checkbox" type="checkbox" id="checkbox2" name="Responding_To_Feedback" value="respondingFeedback">
+                <label class="checkbox" for="Responding_To_Feedback">Responding to Feedback</label>
+            </div>
+            <br>
+            <div><hr></div>
+            <br>
+            <div>
+                <input class="checkbox" type="checkbox" id="checkbox3" name="Prof_Response_Mand" value="profResponseMand">
+                <label class="checkbox" for="Prof_Response_Mand">Update-on-Case: Mandatory</label>
+            </div><br>
+            <div>
+                <input class="checkbox" type="checkbox" id="checkbox4" name="Prof_Response_Nonmand" value="profResponseNonmand">
+                <label class="checkbox" for="Prof_Response_Nomand">Update-on-Case: Non-Mandatory</label>
+            </div><br>
+            <div>
+                <input class="checkbox" type="checkbox" id="checkbox5" name="Prof_Response_Init" value="profResponseInit">
+                <label class="checkbox" for="Prof_Response_Init">Update-on-Case: Initiator reach out</label>
+            </div><br>
+        </div>
+            <button class="submit_button"  id="submit_button">Generate Email</button>
         </div>
         <div class="email_display">
-            <span></span>
+            <span id="span0"></span>
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            <span id="span5"></span>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
